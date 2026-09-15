@@ -3,6 +3,7 @@ const titulos = {
   clientes: 'Clientes',
   produtos: 'Produtos e Serviços',
   ordens: 'Ordens de Serviço',
+  kanban: 'Kanban de Reparos',
   orcamentos: 'Orçamentos',
   vendas: 'Vendas',
   estoque: 'Estoque',
@@ -23,6 +24,7 @@ document.querySelectorAll('.nav-item').forEach(btn => {
     if (view === 'clientes') carregarClientes();
     if (view === 'produtos') carregarProdutos();
     if (view === 'ordens') carregarOrdens();
+    if (view === 'kanban') carregarKanban();
     if (view === 'orcamentos') carregarOrcamentos();
     if (view === 'vendas') carregarVendas();
     if (view === 'estoque') carregarEstoque();
