@@ -17,6 +17,7 @@
       <button class="nav-item" data-view="clientes">👥 Clientes</button>
       <button class="nav-item" data-view="produtos">📦 Produtos</button>
       <button class="nav-item" data-view="ordens">🔧 Ordens</button>
+      <button class="nav-item" data-view="kanban">🗂️ Kanban</button>
       <button class="nav-item" data-view="orcamentos">📝 Orçamentos</button>
       <button class="nav-item" data-view="vendas">💰 Vendas</button>
       <button class="nav-item" data-view="estoque">📥 Estoque</button>
@@ -112,6 +113,13 @@
         <thead><tr><th>ID</th><th>Cliente</th><th>Aparelho</th><th>Status</th><th>Valor</th><th>Ações</th></tr></thead>
         <tbody></tbody>
       </table>
+    </section>
+
+    <section class="view" id="view-kanban">
+      <p style="color:#6b7280; font-size:13px; margin-bottom:12px;">
+        💡 Arraste os cards entre as colunas para mudar o status. A mudança é salva automaticamente.
+      </p>
+      <div class="kanban-board" id="kanban-board"></div>
     </section>
 
     <section class="view" id="view-orcamentos">
@@ -217,6 +225,7 @@
   <script src="js/clientes.js"></script>
   <script src="js/produtos.js"></script>
   <script src="js/ordens.js"></script>
+  <script src="js/kanban.js"></script>
   <script src="js/orcamentos.js"></script>
   <script src="js/vendas.js"></script>
   <script src="js/estoque.js"></script>
